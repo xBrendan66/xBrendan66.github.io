@@ -1,4 +1,4 @@
-baseURL = 'bmatho.com'
+baseURL = 'https://bmatho.com'
 languageCode = 'en-us'
 title = "Brendan's Blog"
 theme = 'HermitV2'
@@ -22,3 +22,8 @@ theme = 'HermitV2'
   [[menu.main]]
   name = "All Posts"
   url = "posts/"
+
+
+[[params.socialLinks]]
+    name = "github"
+    url = "https://github.com/xBrendan66"
