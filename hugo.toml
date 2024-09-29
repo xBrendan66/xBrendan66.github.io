@@ -1,0 +1,24 @@
+baseURL = 'https://bmatho.com/'
+languageCode = 'en-us'
+title = "Brendan's Blog"
+theme = 'HermitV2'
+
+[params.author]
+ name = "Brendan Matheson"
+
+[params]
+ homeSubtitle = "Where personal learnings and homebrew blog posts come to meet!"
+ homeSubtitlePrinter = false
+ dateform = "Jan 2, 2006"
+ dateformShort = "2006-01-02"
+ dateformNumTime = "2006-01-02 15:04:05"
+ code_copy_button = true
+ scrollToTop = true
+ readTime = false
+
+
+[menu]
+
+  [[menu.main]]
+  name = "All Posts"
+  url = "posts/"
