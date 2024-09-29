@@ -1,4 +1,4 @@
-baseURL = 'https://bmatho.com/'
+baseURL = 'bmatho.com'
 languageCode = 'en-us'
 title = "Brendan's Blog"
 theme = 'HermitV2'

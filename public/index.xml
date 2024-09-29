@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Brendan&#39;s Blog</title>
-    <link>http://localhost:1313/</link>
+    <link>//localhost:1313/</link>
     <description>Recent content on Brendan&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 29 Sep 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The start of something new.</title>
-      <link>http://localhost:1313/posts/my-first-post/</link>
+      <link>//localhost:1313/posts/my-first-post/</link>
       <pubDate>Sun, 29 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/my-first-post/</guid>
+      <guid>//localhost:1313/posts/my-first-post/</guid>
       <description>&lt;h1 id=&#34;ive-got-a-long-road-ahead-of-me&#34;&gt;I&amp;rsquo;ve got a long road ahead of me&amp;hellip;&lt;/h1&gt;&#xA;&lt;p&gt;&lt;em&gt;more coming &lt;strong&gt;soon&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;</description>
     </item>
   </channel>
