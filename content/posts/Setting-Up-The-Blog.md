@@ -1,6 +1,6 @@
 ---
 title: "Setting Up My Blog"
-date: 2024-12-19T17:30:10+10:00
+date: 2024-12-27T5:30:10+10:00
 draft: false
 scrolltotop : true
 ---
@@ -17,7 +17,7 @@ Feel free to follow along, that is why I've written this after all. However, ple
 
 # Stage 1: Preparation
 
-I initially followed a guide my friend created, which you can find at "[**dzonta.com**](https://dzonta.com)", Zonta's guide helped me get an overview of the process and drove me to create the very blog you are reading.
+I initially followed a guide my friend created, which you can find at "[**dzonta.com**](https://dzonta.com)", Zonta's guide helped me get an overview of the process and motivated me to create the very blog you are reading.
 
 ### Here's everything I needed to get started: 
 
@@ -42,7 +42,8 @@ Chocolatey simplifies software installation on Windows by automating the process
 
 # Stage 2: Setting Up
 
-After setting up a GitHub account, I followed the [Hugo Quick start guide](https://gohugo.io/getting-started/quick-start/) to complete the below steps from a new powershell window (or the terminal within VS Code):
+After setting up a GitHub account, [creating a fork](https://www.freecodecamp.org/news/how-to-fork-a-github-repository/#:~:text=How%20to%20Fork%20a%20Repo%20in%20GitHub) of my chosen theme I followed the [Hugo Quick start guide](https://gohugo.io/getting-started/quick-start/) to complete the below steps from a new powershell window (or the terminal within VS Code):
+
 1. ```powershell
     hugo new site quickstart
     # Creates a new Hugo site in a folder named "quickstart."
@@ -112,7 +113,7 @@ dateformShort = "2006-01-02"
 dateformNumTime = "2006-01-02 15:04"
 ```
 
-{{< admonition tip>}}
+{{< admonition info>}}
 For further configurations to test, please view the [HermitV2 documentation "Explaining Configs"](https://1bl4z3r.github.io/hermit-V2/en/posts/explaining-configs/), or the corresponding documentation for your theme.
 {{< /admonition>}}
 
@@ -210,9 +211,10 @@ To enable GitHub Pages, I navigated to Settings > Pages in the repository. Under
 
 At this point, I needed to set up a workflow to automatically build and deploy my site whenever I pushed changes. This required creating some new files in the repository.
 
-1. In the root of my repository, I created a new folder called '.github'.
-2. Inside '.github', I created another folder called 'workflows'.
-3. Within 'workflows', I added a new file named 'hugo.yaml'.
+1. In the root of my blog repository, I created a new folder called `.github`.
+2. Inside `.github`, I created another folder called `workflows`.
+3. Within `workflows`, I added a new file named `hugo.yaml`.
+    * Final result should be `/.github/workflows/hugo.yaml`
 
 For the workflow configuration, I used a template from [this gist](https://gist.github.com/thisismikekelly/1a24ad2c8c923127dc3cb29edca13746) or [the Hugo documentation](https://gohugo.io/hosting-and-deployment/hosting-on-github/). After pasting the contents into a new 'hugo.yaml' file, I saved the changes and pushed them to GitHub:
 
@@ -259,15 +261,15 @@ I decided to use my custom domain, `bmatho.com`, for the blog. Here’s how I go
      ```
    - After this, `bmatho.com` started showing my blog, though it was formatted weirdly...
 
-   3. **Fixing the Formatting Issue:**  
+3. **Fixing the Formatting Issue:**  
    
    ![Formatting Issue](/Setting%20Up%20The%20Blog/Formatting%20Issue.jpg)
 
    - My base URL in the `hugo.toml` file was set to `https://bmatho.com`, but since I hadn’t set up HTTPS yet, this was causing the formatting issue.  
    - I changed it to `bmatho.com`, and the site loaded correctly.
-   - I then proceeded to enable HTTPS for my domain, changed the URL back to https:// within hugo.toml, pushed the change and verified that is is now working!
+   - I then proceeded to enable HTTPS for my domain, changed the URL back to `https://` within `hugo.toml`, pushed the change and verified that is is now working!
 
-   ### Adding a Favicon  
+### Adding a Favicon  
 To replace the default “globe” favicon, I used [favicon.io](https://favicon.io/favicon-generator/) to create a custom favicon.  
 
 1. Downloaded the favicon files and added them directly to the `static/` folder of my Hugo project.  
