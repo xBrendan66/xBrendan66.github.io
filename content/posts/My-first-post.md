@@ -1,9 +1,12 @@
 ---
 title: "The start of something new."
 date: 2024-09-29
-draft: false
+draft: true
+scrolltotop : true
 ---
 
 # I've got a long road ahead of me...
+Consider this my "*Hello World*".
 
-*more coming **soon*** 
+More coming **soon...** but for now, Hello!
+

@@ -4,17 +4,19 @@ title = "Brendan's Blog"
 theme = 'HermitV2'
 
 [params.author]
- name = "Brendan Matheson"
+ name = "Brendan Matheson" # Hi, It's Me!
 
 [params]
  homeSubtitle = "Where personal learnings and homebrew blog posts come to meet!"
  homeSubtitlePrinter = false
- dateform = "Jan 2, 2006"
- dateformShort = "2006-01-02"
- dateformNumTime = "2006-01-02 15:04:05"
+ dateform = "Jan 2, 2006 03:04 PM"
+ dateformShort = "Jan 2, 2006"
+ dateformNumTime = "Jan 2, 2006 15:04"
  code_copy_button = true
  scrollToTop = true
- readTime = false
+ enableEmoji = true
+ readTime = true
+ shareSocial = true
 
 
 [menu]
@@ -26,4 +28,4 @@ theme = 'HermitV2'
 
 [[params.socialLinks]]
     name = "github"
-    url = "https://github.com/xBrendan66"
+    url = "https://github.com/xBrendan66" # If you're reading this, you're already there!
